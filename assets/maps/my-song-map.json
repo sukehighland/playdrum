@@ -1,0 +1,18 @@
+{
+  "songTitle": "My Awesome Song",
+  "artist": "The Coder Band",
+  "bpm": 128,
+  "audioFile": "assets/audio/my-song.mp3",
+  "noteSpeed": 3,
+  "events": [
+    { "time": 1.875, "instrument": "kick", "lane": 2 },
+    { "time": 2.343, "instrument": "hihat", "lane": 1 },
+    { "time": 2.812, "instrument": "snare", "lane": 3 },
+    { "time": 3.281, "instrument": "hihat", "lane": 1 },
+    { "time": 3.750, "instrument": "kick", "lane": 2 },
+    { "time": 3.984, "instrument": "kick", "lane": 2 },
+    { "time": 4.218, "instrument": "hihat", "lane": 1 },
+    { "time": 4.687, "instrument": "snare", "lane": 3 },
+    { "time": 5.156, "instrument": "hihat", "lane": 1 }
+  ]
+}
