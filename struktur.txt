@@ -1,0 +1,11 @@
+MyDrumGame/
+├── index.html
+├── style.css
+├── script.js
+├── songs-database.json     <-- FILE JSON TUNGGAL
+└── assets/
+    ├── audio/
+    │   ├── song1.mp3
+    │   └── song2.mp3
+    └── images/
+        └── ... (semua gambar Anda)
