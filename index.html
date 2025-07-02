@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Drum Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <h1>Rhythm Drum Game</h1>
+        <p id="loading-text">Loading...</p>
+        <button id="startButton" style="display: none;">Start Game</button>
+    </div>
+
+    <div id="game-ui" class="hidden">
+        <div id="info-bar">
+            <span id="song-title"></span>
+            <span id="score-display">Score: 0</span>
+        </div>
+        <div id="game-container">
+            <div class="lane" data-key="D" data-lane="1"></div>
+            <div class="lane" data-key="F" data-lane="2"></div>
+            <div class="lane" data-key="J" data-lane="3"></div>
+            <div class="lane" data-key="K" data-lane="4"></div>
+
+            <div id="strike-line">
+                <div class="key-hint">D</div>
+                <div class="key-hint">F</div>
+                <div class="key-hint">J</div>
+                <div class="key-hint">K</div>
+            </div>
+        </div>
+        <div id="combo-display"></div>
+    </div>
+
+    <!-- Wajib di bawah agar bisa mengakses elemen di atas -->
+    <script src="script.js"></script>
+</body>
+</html>
