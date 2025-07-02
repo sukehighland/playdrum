@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Loading & Start Screen */
+#loading-screen {
+    text-align: center;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#startButton:hover {
+    background-color: #45a049;
+}
+
+/* Game UI */
+#game-ui {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#info-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    font-size: 18px;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height based on viewport */
+    background-color: #222;
+    border: 3px solid #555;
+    overflow: hidden;
+    display: flex;
+}
+
+/* Lanes */
+.lane {
+    flex: 1; /* Each lane takes equal width */
+    height: 100%;
+    border-right: 2px dashed #444;
+    position: relative;
+}
+.lane:last-child {
+    border-right: none;
+}
+.lane.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Strike Line & Key Hints */
+#strike-line {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    height: 5px;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.key-hint {
+    color: cyan;
+    font-size: 24px;
+    font-weight: bold;
+    width: 25%; /* Align with lanes */
+    text-align: center;
+}
+
+/* Notes */
+.note {
+    position: absolute;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%; /* Maintain square aspect ratio */
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Hit Feedback (Combo) */
+#combo-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none; /* Make it unclickable */
+}
+
+#combo-display.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
