@@ -1,0 +1,32 @@
+{
+  "songs": [
+    {
+      "id": "song1",
+      "title": "Rhythm of the Code",
+      "artist": "The Devs",
+      "audioFile": "assets/audio/song1.mp3",
+      "noteSpeed": 3,
+      "events": [
+        { "time": 1.875, "instrument": "kick", "lane": 2 },
+        { "time": 2.343, "instrument": "hihat", "lane": 1 },
+        { "time": 2.812, "instrument": "snare", "lane": 3 },
+        { "time": 3.281, "instrument": "hihat", "lane": 1 },
+        { "time": 3.750, "instrument": "kick", "lane": 2 }
+      ]
+    },
+    {
+      "id": "song2",
+      "title": "Pixel Pulse",
+      "artist": "8-Bit Heroes",
+      "audioFile": "assets/audio/song2.mp3",
+      "noteSpeed": 3.2,
+      "events": [
+        { "time": 0.468, "instrument": "kick", "lane": 2 },
+        { "time": 0.937, "instrument": "snare", "lane": 3 },
+        { "time": 1.171, "instrument": "hihat", "lane": 1 },
+        { "time": 1.406, "instrument": "kick", "lane": 2 },
+        { "time": 1.875, "instrument": "snare", "lane": 3 }
+      ]
+    }
+  ]
+}
